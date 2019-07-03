@@ -1,19 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import './UI/welcome.dart';
 
 void main() {
-  runApp(new Material(
-    color: Colors.lightBlueAccent,
-    child: Center(
-      child: Text(
-        "Hello Poshan!",
-        textDirection: TextDirection.ltr,
-        style: new TextStyle(
-          fontWeight: FontWeight.w900,
-          fontStyle: FontStyle.italic,
-          letterSpacing: 10,
-        ),
-      ),
+  runApp(
+    new MaterialApp(
+      title: "New App",
+      home: new Welcome(),
     ),
-  ));
+  );
 }
+
+
